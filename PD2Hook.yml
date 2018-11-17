@@ -1,0 +1,19 @@
+Config:
+  OutputMode: 0
+  OutputFile: PD2Hook.log
+  PrintOffsets: false
+  ExtraCols: 10
+  ExtraRows: 10
+
+KeyBindings:
+  # Do not bind F1, it will cause PD1 to crash.
+  - [VK_F2, mpga\place_medkit.lua]
+  - [VK_F3, mpga\place_ammo.lua]
+  - [VK_F4, mpga\place_sentry.lua]
+  - [VK_F5, mpga\place_tripmine.lua]
+  - [VK_F6, mpga\reset_downs.lua]
+  - [VK_F9, mpga\release_custody.lua]
+  - [VK_F10, mpga\infinite_ammo.lua]
+
+PostRequireScripts:
+  - [lib/entry, mpga\init.lua]
